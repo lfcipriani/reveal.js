@@ -1,0 +1,63 @@
+/**
+ * Sky theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Gotham Light', "Helvetica Neue", sans-serif;
+$mainColor: #f5f8fa;
+$mainFontSize: 35px;
+
+$headingFont: 'Gotham Bold', "Helvetica Neue", sans-serif;
+$headingColor: #55acee;
+$headingLetterSpacing: 0.0em;
+$headingTextShadow: none;
+$headingTextTransform: none;
+
+$backgroundColor: #292f33;
+
+$linkColor: #55acee;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #134674;
+
+// Twitter awareness
+
+
+// Fix links so they are not cut off
+.reveal a:not(.image) {
+	line-height: 1.3em;
+}
+
+.reveal section img.simple {
+    border: none; 
+    background: none; 
+    box-shadow:none;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-weight: bold;
+}
+
+// Background generator
+//@mixin bodyBackground() {
+	////@include radial-gradient( #add9e4, #f7fbfc );
+	//@include radial-gradient( $backgroundColor, rgba(85,90,95,1) );
+//}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
